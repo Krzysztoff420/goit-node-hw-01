@@ -16,8 +16,11 @@
     "nodemon": "^2.0.22"
   },
   "dependencies": {
-    "commander": "^10.0.0",
+    "commander": "^10.0.1",
+    "fs": "^0.0.1-security",
+    "fs.promises": "^0.1.2",
     "nanoid": "^4.0.2",
-    "yargs": "^17.7.1"
+    "path": "^0.12.7",
+    "yargs": "^17.7.2"
   }
 }

@@ -15,11 +15,13 @@ const argv = commander.program.opts();
 function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
-      Contacts.listContacts();
+       const contacts = Contacts.listContacts();
+       console.table(contacts);
       break;
 
     case "get":
-      Contacts.getContactById(id);
+      const requestedContact = Contacts.getContactById(id);
+      console.log(requestedContact);
       break;
 
     case "add":
